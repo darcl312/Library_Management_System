@@ -24,6 +24,35 @@ public class library {
         return true;
     }
 
+       
+        public void viewAvailableBooks() {
+            for (Book book : books.values()) {
+                if (!book.isBorrowed()) {
+                    System.out.println(book);
+                }
+            }
+        }
+    
+        public boolean borrowBook(String isbn) {
+            Book book = books.get(isbn);
+            if (book != null && !book.isBorrowed()) {
+                book.borrow();
+                return true;
+            } else {
+                return false;  
+            }
+        }
+    
+        public boolean returnBook(String isbn) {
+            Book book = books.get(isbn);
+            if (book != null && book.isBorrowed()) {
+                book.returnBook();
+                return true;
+            } else {
+                return false;  
+            }
+        }
+
     public Map<String, Book> getBooks() {
         return books;
     }
