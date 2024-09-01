@@ -46,5 +46,11 @@ public class LibraryManagementSystemTest {
         assertTrue(library.getBooks().get("978-0134685991").isBorrowed());
     }
 
+    @Test
+    public void testBorrowBookUnavailable() {
+        library.borrowBook("978-0134685991");
+        assertFalse(library.borrowBook("978-0134685991"));  
+    }
+
 
 }
