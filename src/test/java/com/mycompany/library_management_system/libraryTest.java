@@ -23,6 +23,13 @@ public class libraryTest {
         assertEquals("Effective Java", library.getBooks().get("978-0134685991").getTitle());
         assertEquals("Joshua Bloch", library.getBooks().get("978-0134685991").getAuthor());
     }
+    @Test
+    public void testAddDuplicateBook() {
+        library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
+        library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
+        assertEquals(2, library.getBooks().size()); 
+    }
+
 
    
 }
