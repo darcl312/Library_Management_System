@@ -27,7 +27,7 @@ public class libraryTest {
     public void testAddDuplicateBook() {
         library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
         library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
-        assertEquals(2, library.getBooks().size()); 
+        assertEquals(1, library.getBooks().size()); 
     }
 
 

@@ -17,7 +17,9 @@ public class library {
 
    
     public boolean addBook(String isbn, String title, String author, int year) {
-        
+        if (isbn == null || isbn.isEmpty() || title == null || title.isEmpty()|| books.containsKey(isbn)) {
+            return false;  
+        }
         books.put(isbn, new Book(isbn, title, author, year));
         return true;
     }
