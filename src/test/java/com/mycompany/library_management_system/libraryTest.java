@@ -1,45 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
- */
 package com.mycompany.library_management_system;
 
-import org.junit.After;
-import org.junit.AfterClass;
+
+
+import com.mycompany.library_management_system.library;
+import com.mycompany.library_management_system.Book;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Darshil
- */
 public class libraryTest {
-    
-    public libraryTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
+
+    private library library;
+
     @Before
     public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
+        
     }
 
-    @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
+   
 }

@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.library_management_system;
 
-/**
- *
- * @author Darshil
- */
-public class book {
+
+    public class Book {
+
+        private String isbn;
+        private String title;
+        private String author;
+        private int publicationYear;
+        private boolean isBorrowed;
     
-}
+        public Book(String isbn, String title, String author, int publicationYear) {
+            this.isbn = isbn;
+            this.title = title;
+            this.author = author;
+            this.publicationYear = publicationYear;
+            this.isBorrowed = false;
+        }
+
+        
+    
+      
+    }
+    
+    
+

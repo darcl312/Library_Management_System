@@ -1,45 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
- */
 package com.mycompany.library_management_system;
 
-import org.junit.After;
-import org.junit.AfterClass;
+
+
+import com.mycompany.library_management_system.Book;
+
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Darshil
- */
 public class bookTest {
-    
-    public bookTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
+
+    private Book book;
+
     @Before
     public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
+        book = new Book("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
     }
 
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testBookCreation() {
+        assertEquals("978-0134685991", book.getIsbn());
+        assertEquals("Effective Java", book.getTitle());
+        assertEquals("Joshua Bloch", book.getAuthor());
+        assertEquals(2018, book.getPublicationYear());
+        assertFalse(book.isBorrowed());
     }
     
+   
 }
