@@ -43,9 +43,14 @@ public class bookTest {
         book.borrow();
         book.returnBook();
         assertFalse(book.isBorrowed());
+
     }
 
-
+    @Test
+    public void testToString() {
+        String expected = "Effective Java by Joshua Bloch (ISBN: 978-0134685991, Year: 2018)";
+        assertEquals(expected, book.toString());
+    }
 
 
     

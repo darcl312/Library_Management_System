@@ -50,10 +50,7 @@ package com.mycompany.library_management_system;
             isBorrowed = false;
         }
     
-        @Override
-        public String toString() {
-            return title + " by " + author + " (ISBN: " + isbn + ", Year: " + publicationYear + ")";
-        }
+        
     }
     
     
