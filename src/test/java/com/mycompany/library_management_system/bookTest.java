@@ -38,6 +38,14 @@ public class bookTest {
         book.borrow();
     }
 
+    @Test
+    public void testReturnBook() {
+        book.borrow();
+        book.returnBook();
+        assertFalse(book.isBorrowed());
+    }
+
+
 
 
     
