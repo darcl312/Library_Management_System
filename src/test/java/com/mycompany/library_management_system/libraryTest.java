@@ -37,6 +37,14 @@ public class libraryTest {
         assertEquals(2, library.getBooks().size());
     }
 
+    @Test
+    public void testAddBookInvalidISBN() {
+        
+        library.addBook("", "Some Book", "Some Author", 2024);
+        assertNull(library.getBooks().get(""));  
+    }
+
+
 
 
    
