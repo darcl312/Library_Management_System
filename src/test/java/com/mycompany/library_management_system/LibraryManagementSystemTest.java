@@ -58,6 +58,10 @@ public class LibraryManagementSystemTest {
         assertFalse(library.getBooks().get("978-0134685991").isBorrowed());
     }
 
+@Test
+    public void testReturnBookNotBorrowed() {
+        assertFalse(library.returnBook("978-0134685991")); 
+    }
 
 
 }
