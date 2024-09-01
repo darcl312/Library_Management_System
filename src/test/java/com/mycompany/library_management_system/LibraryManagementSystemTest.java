@@ -25,11 +25,19 @@ public class LibraryManagementSystemTest {
 
     @Before
     public void setUp() {
-       
+        library = new library();
+        library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
+        library.addBook("978-0596009205", "Head First Java", "Kathy Sierra", 2005);
     }
 
     @After
     public void tearDown() {
+    }
+
+    @Test
+    public void testViewAvailableBooks() {
+        library.viewAvailableBooks();
+        assertEquals(2, library.getBooks().size()); 
     }
 
 }

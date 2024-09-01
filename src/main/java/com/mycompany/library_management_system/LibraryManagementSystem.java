@@ -35,7 +35,7 @@ import java.util.Scanner;
  
                      
  
-                 case 2: // View available books
+                 case 2: // View available book2s
                      System.out.println("Available Books:");
                  
                      break;
