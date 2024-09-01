@@ -30,6 +30,14 @@ public class libraryTest {
         assertEquals(1, library.getBooks().size()); 
     }
 
+    @Test
+    public void testAddMultipleBooks() {
+        library.addBook("978-0134685991", "Effective Java", "Joshua Bloch", 2018);
+        library.addBook("978-0596009205", "Head First Java", "Kathy Sierra", 2005);
+        assertEquals(2, library.getBooks().size());
+    }
+
+
 
    
 }
