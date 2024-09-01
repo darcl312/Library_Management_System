@@ -40,7 +40,9 @@ package com.mycompany.library_management_system;
         }
     
         public void borrow() {
-            
+            if (isBorrowed) {
+                throw new IllegalStateException("Book is already borrowed.");
+            }
             isBorrowed = true;
         }
     
