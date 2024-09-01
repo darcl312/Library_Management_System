@@ -25,6 +25,13 @@ public class bookTest {
         assertEquals(2018, book.getPublicationYear());
         assertFalse(book.isBorrowed());
     }
+
+    @Test
+    public void testBorrowBook() {
+        book.borrow();
+        assertTrue(book.isBorrowed());
+    }
+
     
    
 }
