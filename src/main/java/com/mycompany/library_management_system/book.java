@@ -46,7 +46,9 @@ package com.mycompany.library_management_system;
             isBorrowed = true;
         }
     
-       
+        public void returnBook() {
+            isBorrowed = false;
+        }
     
         @Override
         public String toString() {
