@@ -32,6 +32,14 @@ public class bookTest {
         assertTrue(book.isBorrowed());
     }
 
+    @Test(expected = IllegalStateException.class)
+    public void testBorrowAlreadyBorrowedBook() {
+        book.borrow();
+        book.borrow();
+    }
+
+
+
     
    
 }
