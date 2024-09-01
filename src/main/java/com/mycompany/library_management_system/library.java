@@ -9,5 +9,20 @@ import java.util.Map;
 
 public class library {
 
-    
+    private Map<String, Book> books;
+
+    public library() {
+        books = new HashMap<>();
+    }
+
+    // Method to add a book to the library
+    public boolean addBook(String isbn, String title, String author, int year) {
+        
+        books.put(isbn, new Book(isbn, title, author, year));
+        return true;
+    }
+
+    public Map<String, Book> getBooks() {
+        return books;
+    }
 }
