@@ -40,4 +40,11 @@ public class LibraryManagementSystemTest {
         assertEquals(2, library.getBooks().size()); 
     }
 
+    @Test
+    public void testBorrowBookSuccessfully() {
+        assertTrue(library.borrowBook("978-0134685991"));
+        assertTrue(library.getBooks().get("978-0134685991").isBorrowed());
+    }
+
+
 }
